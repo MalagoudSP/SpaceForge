@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+*,
+* >,
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+body,
+html {
+  min-width: 350px;
+}
+
+@theme {
+  --color-white: #d0d6f9;
+  --color-white-Pure: #ffffff;
+  --color-black: #121212;
+  --color-gray: #979797;
+
+  --width-desc-t: 512px;
+  --width-desc-d: 540px;
+  --width-desc-bd: 640px;
+
+  --breakpoint-md: 640px;
+
+  /* the space needed for navigation section */
+  --spacing-nav-height-m: 88px;
+  --spacing-nav-height-t: 100px;
+  --spacing-nav-height-d: 140px;
+  --spacing-logo-size-small: 40px;
+  --spacing-logo-size-large: 48px;
+  --text-nav-text-mobile: 16px;
+  --text-nav-text-tablet: 20px;
+  --text-nav-text-deskton: 22px;
+  --text-nav-text-bigDeskton: 23px;
+
+  /* side padding*/
+  --spacing-page-padding-m: 24px;
+  --spacing-page-padding-t: 40px;
+  --spacing-page-padding-d: 65px;
+  --spacing-page-padding-bd: 85px;
+  --spacing-context-padding-bigDesktop: calc(
+    165px - var(--spacing-page-padding-bd)
+  );
+
+  /* text */
+  --text-mobile-gen: 15px;
+  --text-tablet-gen: 16px;
+  --text-desktop-gen: 18px;
+  --text-bigDesktop-gen: 20px;
+
+  /* spacing */
+  --spacing-fromNav-to-Section-m: 3vh;
+  --spacing-fromNav-to-Section-t: 6vh;
+  --spacing-fromNav-to-Section-d: 10vh;
+  --spacing-fromNav-to-Section-bd: 5vh;
+
+  /* home page text */
+  --text-home-title-small: 80px;
+  --text-home-title-large: 144px;
+  --text-home-title-veryLarge: 180px;
+  --text-home-explore-small: 18px;
+  --text-home-explore-large: 32px;
+  --text-home-explore-veryLarge: 32px;
+  --text-home-upperText-small: 16px;
+  --text-home-upperText-large: 32px;
+  --text-home-upperText-veryLarge: 40px;
+
+  --spacing-explore-cir-radius-small: 144px;
+  --spacing-explore-cir-radius-large: 272px;
+  --spacing-explore-cir-radius-veryLarge: 400px;
+  --spacing-explore-outercir-radius-small: calc(
+    var(--spacing-explore-cir-radius-small) + 100px
+  );
+  --spacing-explore-outercir-radius-large: calc(
+    var(--spacing-explore-cir-radius-large) + 150px
+  );
+  --spacing-explore-outercir-radius-veryLarge: calc(
+    var(--spacing-explore-cir-radius-veryLarge) + 250px
+  );
+
+  --spacing-explore-my-long: 6vh;
+  --spacing-explore-my-short: 5vh;
+
+  /* crew page */
+  --spacing-bubble-small: 11px;
+  --spacing-bubble-large: 13px;
+  --spacing-bubble-veryLarge: 16px;
+
+  --spacing-titleToDescription-small: 40px;
+  --spacing-titleToDescription-large: 40px;
+  --spacing-titleToDescription-veryLarge: 40px;
+
+  --text-crew-role-mobile: 18px;
+  --text-crew-role-tablet: 24px;
+  --text-crew-role-desktop: 32px;
+  --text-crew-name-mobile: 24px;
+  --text-crew-name-tablet: 40px;
+  --text-crew-name-desktop: 56px;
+  --spacing-crew-pic-mobile: 42vh;
+  --spacing-crew-pic-tablet: 45vh;
+  --spacing-crew-pic-desktop: 70vh;
+
+  /* planet size */
+  --spacing-planet-pic-mobile: 150px;
+  --spacing-planet-pic-tablet: 300px;
+  --spacing-planet-pic-desktop: 380px;
+  --spacing-planet-pic-bigDesktop: 470px;
+  --spacing-planet-padding-mobile: 10vh;
+  --spacing-planet-padding-tablet: 15vh;
+  --spacing-planet-padding-desktop: 20vh;
+  --spacing-planet-wrapper-mobile: calc(
+    var(--spacing-planet-pic-mobile) + (var(--spacing-planet-padding-mobile))
+  );
+  --spacing-planet-wrapper-tablet: calc(
+    var(--spacing-planet-pic-tablet) + (var(--spacing-planet-padding-tablet))
+  );
+  --spacing-planet-wrapper-desktop: calc(
+    var(--spacing-planet-pic-desktop) + (var(--spacing-planet-padding-desktop))
+  );
+  --text-planetList-mobile: 15px;
+  --text-planetList-tablet: 17px;
+  --text-planetList-desktop: 20px;
+  --text-planetName-mobile: 56px;
+  --text-planetName-tablet: 80px;
+  --text-planetName-desktop: 130px;
+
+  /* the values for other pages */
+  --text-general-title-small: 16px;
+  --text-general-title-large: 20px;
+  --text-general-title-veryLarge: 28px;
+
+  /* technology */
+  --spacing-tech-pic-mobile: 35vh;
+  --spacing-tech-pic-tablet: 35vh;
+  --spacing-tech-pic-desktop: 35vw;
+  --spacing-tech-pic-bigDesktop: 30vw;
+
+  --spacing-tech-pic-padding-t: 5.5rem;
+  --spacing-tech-pic-padding-b: 2rem;
+
+  --text-tech-title-mobile: 1.5rem;
+  --text-tech-title-tablet: 2.5rem;
+  --text-tech-title-desktop: 3rem;
+  --text-tech-title-bigDesktop: 3.5rem;
+
+  --text-tech-termonology-mobile: 1.25rem;
+  --text-tech-termonology-tablet: 1.75rem;
+  --text-tech-termonology-desktop: 2.25rem;
+
+  --spacing-circleSize-m: 2.2rem;
+  --spacing-circleSize-t: 3.5rem;
+  --spacing-circleSize-d: 4.5rem;
+
+  /* description for tech */
+  --width-tech-desc-d: 45vw;
+}
+
+.barlow-reg {
+  font-family: "Barlow", sans-serif;
+}
+.barlow {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.Bellefair {
+  font-family: "Bellefair", serif;
+}
