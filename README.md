@@ -5,7 +5,7 @@
 
 This project is built using React and Tailwind CSS for speed, scalability, and a polished user experience, showcaseing a modern layout with smooth animations, intuitive navigation, and a beautiful UI.
 
-Live Demo: [spaceForge](https://spacing-travelling-web.netlify.app/)
+Live Demo: [SpaceForge](https://spacing-travelling-web.netlify.app/)
 
 # features
 - Responsive design for mobile, tablet, desktop and big screens  
