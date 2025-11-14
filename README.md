@@ -11,7 +11,7 @@ Live Demo: [SpaceForge](https://spacing-travelling-web.netlify.app/)
 - Responsive design for mobile, tablet, desktop and big screens  
 - Clean, user-friendly interface
 
-# built with:
+# built with
 - HTML5  
 - CSS3 (including responsive layout) and Tailwind  
 - JavaScript
